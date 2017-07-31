@@ -43,26 +43,6 @@ function showMicrobleidingImgs() {
         });
 };
 
-// function showPrices() {
-//     $('#priceList_popup').popup();
-//     $('#cosmetics-content').load('../CosmeticsPages/pricelist.html',
-//         function (res) {
-//             // $('html, body').animate({
-//             //     scrollTop: $("#priceList").offset().top
-//             // }, 1000);
-//             $('#priceList_popup').popup('show');
-//         });
-// };
-
-function showMoreAboutWaxing() {
-    $('#cosmetics-content').load('../CosmeticsPages/waxing.html',
-        function (res) {
-            $('html, body').animate({
-                scrollTop: $("#waxing").offset().top
-            }, 1000);
-        });
-};
-
 $(function () {
     var btn = $(".slider__btn");
 
@@ -78,19 +58,17 @@ $(function () {
     });
 });
 
-$('#priceList_popup').popup({
-    opacity: 0.8,
-    transition: 'all 1s'
+function showPrices() {
+    $('#cosmetics-content').load('../CosmeticsPages/pricelist.html',
+        function (res) {
+            $('.modal').css('display', 'block');
 
- });
+        });
+    
+    $(window).onclick = function (event) {
+        if (event.target == $('#price-list')) {
+            $('#price-list').css('display', 'none');
 
-function highlightPrices(type) {
-    if (type === 'microbleiding') {
-        $('.microbleiding_prices').addClass('highlighted');
-        $('.lashes_prices').removeClass('highlighted');
-        
-    } else if (type === 'lashes') {
-        $('.microbleiding_prices').removeClass('highlighted');
-        $('.lashes_prices').addClass('highlighted')
+        }
     }
 }

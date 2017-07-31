@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles/bootstrap.min.css" rel="stylesheet">
     <link href="styles/business-casual.css" rel="stylesheet">
-    <link href="styles/microbleidingGallery.css" rel="stylesheet">
     <link href="styles/cosmetics.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -63,8 +65,8 @@
                             <div class="panel-body"><strong>Микроблейдинг</strong></div>
                             <img class="img-responsive img-full" src="./img/microbl.jpg">
                             <div class="btn btn-warning" onclick="showMoreAboutMicrobleiding()">Научете повече</div>
-                            <div class="btn btn-warning" onclick="showMicrobleidingImgs()">Галерия</div>
-                            <div class="btn btn-warning priceList_popup_open" onclick="highlightPrices('microbleiding')">Цени</div>
+                            <div class="btn btn-warning" onclick="">Галерия</div>
+                            <div class="btn btn-warning" onclick="">Цени</div>
 
                         </div>
                     </div>
@@ -74,16 +76,13 @@
                         <div class="panel-body"><strong>Удължаване и сгъстяване на мигли</strong></div>
                         <img class="img-responsive img-full" src="./img/lashes.jpg">
                         <div class="btn btn-warning" onclick="showMoreAboutLashes()">Научете повече</div>
-                        <div class="btn btn-warning" onclick="showMicrobleidingImgs()">Галерия</div>
-                        <div class="btn btn-warning priceList_popup_open" onclick="highlightPrices('lashes')">Цени</div>
                     </div>
                 </div>
                 <div class="col col-lg-3">
                     <div class="panel panel-default">
                         <div class="panel-body"><strong>Кола Маска</strong></div>
                         <img class="img-responsive img-full" src="./img/wax.jpg">
-                        <div class="btn btn-warning" onclick="showMoreAboutWaxing()">Научете повече</div>
-                        <div class="btn btn-warning" onclick="showPrices()">Цени</div>
+                        <div class="btn btn-warning" onclick="toggle()">Научете повече</div>
                     </div>
                 </div>
                 <div class="col col-lg-3">
@@ -95,62 +94,11 @@
                         </div>
                     </div>
                 </div>
-              
-                     <!--<div class="btn btn-warning" style="text-align:right" onclick="toggle()">Научете повече</div>-->
-                
             </div>
         </div>
     </div>
-    <div id="cosmetics-content" class="container"></div>
-
-    <div id="priceList_popup">
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center"><strong>Ценоразпис</strong></h2>
-                    <hr>
-                    <div class="table-responsive">
-                        <table class="table table-inverse">
-                            <thead>
-                                <tr>
-                                    <th>Услуга</th>
-                                    <th>Цена</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="microbleiding_prices">
-                                    <td colspan="3" class="text-center">
-                                        <h5><strong>Микроблейдинг</strong></h5>
-                                    </td>
-                                </tr>
-                                <tr class="microbleiding_prices">
-                                    <td>Първоначално попълване</td>
-                                    <td>200 - 250 лв.</td>
-                                </tr>
-                                <tr class="microbleiding_prices">
-                                    <td>Ретуш</td>
-                                    <td>50 - 100 лв.</td>
-                                </tr>
-                                <tr class="lashes_prices">
-                                    <td colspan="3" class="text-center"><strong>Поставяне на мигли</strong></td>
-                                </tr>
-                                <tr class="lashes_prices">
-                                    <td>Първоначално поставяне</td>
-                                    <td>60 - 80 лв.</td>
-                                </tr>
-                                <tr class="lashes_prices">
-                                    <td>Поддръжка</td>
-                                    <td>50 лв.</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                    <button class="priceList_popup_close">Close</button>
-                </div>
-            </div>
-        </div>
+    <div id="cosmetics-content" class="container">
+       
     </div>
 
     <footer>
@@ -164,10 +112,8 @@
     </footer>
 
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 

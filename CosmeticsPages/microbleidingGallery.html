@@ -1,0 +1,45 @@
+<div id="microbleiding-gallery">
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <div class="slider">
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/1.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/2.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/3.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/5.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/6.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/7.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/8.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/9.jpg" />
+                    </figure>
+                    <figure class="slider__item"><img class="slider__image" src="../img/microblGallery/10.jpg" />
+                    </figure>
+                </div>
+                <div class="slider__btn"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var btn = $(".slider__btn");
+
+        btn.on("click", function () {
+            $(".slider__item").first().clone().appendTo(".slider");
+            $(".slider__image").first().css({
+                transform: "rotateX(-180deg)",
+                opacity: 0
+            });
+            setTimeout(function () {
+                $(".slider__item").first().remove();
+            }, 200);
+        });
+    });
+</script>

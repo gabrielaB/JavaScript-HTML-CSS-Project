@@ -1,0 +1,45 @@
+.panel {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn {
+    padding: 6px 10px;
+     margin: 5px 0;
+}
+.btn:last-child {
+    padding-left:12px;
+     margin: 5px 0;
+}
+
+.panel-body {
+    padding: 9px;
+    padding-bottom: 10px
+}
+
+.img-full {
+    height: 200px;
+    border-radius: 4px;
+}
+@media screen and (min-width:360px) {
+    .panel-default {
+        width: 22em;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+@media screen and (min-width:375px) {
+    .panel-default {
+        width: 23em;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .panel-default {
+        width: 20em;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+

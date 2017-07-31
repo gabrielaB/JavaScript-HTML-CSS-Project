@@ -37,6 +37,7 @@ hr {
 
 .navbar-brand {
     text-transform: uppercase;
+    font-weight: 900;
     letter-spacing: 2px;
 }
 
@@ -162,7 +163,7 @@ footer p {
         line-height: normal;
     }
     .navbar-nav {
-        display: -webkit-box;
+        display: table;
         float: none;
         margin: 0 auto;
         table-layout: fixed;

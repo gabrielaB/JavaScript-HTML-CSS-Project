@@ -4,11 +4,12 @@
 
 .btn {
     padding: 6px 10px;
-     margin: 5px 0;
+    margin: 5px 0;
 }
+
 .btn:last-child {
-    padding-left:12px;
-     margin: 5px 0;
+    padding-left: 12px;
+    margin: 5px 0;
 }
 
 .panel-body {
@@ -20,26 +21,146 @@
     height: 200px;
     border-radius: 4px;
 }
+
+.table-inverse {
+    color: #fff;
+    background-color: #292b2c;
+}
+
+.highlighted {
+    background-color: #f0ad4e;
+    color: #292b2c;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width:320px) {
+    .panel-default {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /*.navbar-brand {
+        font-weight: 500;
+        font-size: 14px;
+    }*/
+    .btn {
+        font-size: 15px;
+        display: block;
+    }
+}
+
 @media screen and (min-width:360px) {
     .panel-default {
-        width: 22em;
+        width: 100%;
         padding-left: 6px;
         padding-right: 6px;
     }
+    /*.navbar-brand {
+        font-weight: 600;
+        font-size: 16px;
+    }*/
+    .btn,
+    .panel-body {
+        font-size: 17px;
+    }
 }
+
 @media screen and (min-width:375px) {
     .panel-default {
-        width: 23em;
+        width: 100%;
         padding-left: 6px;
         padding-right: 6px;
     }
+    .btn {
+        padding: 6px 18px;
+    }
+    /*.navbar-brand {
+        font-weight: 700;
+    }*/
+    .btn,
+    .panel-body {
+        font-size: 18px;
+    }
 }
+
+@media screen and (min-width:412px) {
+    /*.navbar-brand {
+        font-weight: 800;
+        font-size: 17px;
+    }*/
+    .btn,
+    .panel-body {
+        font-size: 19px;
+    }
+    .table td{
+        width:20em;
+    }
+}
+
+/*@media screen and (min-width:768px) {
+    .panel-default {
+        width: 100%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .panel-body {
+        padding-left: 35px;
+    }
+    .img-full {
+        min-width: 90%;
+        margin: 0 auto;
+    }
+    .btn {
+        padding: 6px 18px;
+        margin-left: 35px;
+    }
+    .btn:last-child {
+        padding: 6px 18px;
+        margin-left: 35px;
+    }
+    .navbar-brand {
+        font-weight: 800;
+    }
+    /*.navbar-nav {
+        display: -webkit-box;
+        font-size: 14px;
+        font-weight: 700;
+    }*/
+
 
 @media screen and (min-width:1200px) {
     .panel-default {
-        width: 20em;
+        width: 110%;
         padding-left: 6px;
-        padding-right: 6px;
+        padding-right: 9px;
     }
+    .btn {
+        padding: 7px 9px;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .btn:last-child {
+        padding: 7px 5px;
+        margin-left: 0px;
+    }
+    .img-full {
+        min-width: 100%;
+        margin: 0 auto;
+    }
+    .panel-body {
+        padding-left: 1px;
+        font-size: 14px;
+    }
+    .table td{
+        width:30em;
+    }
+    /*.navbar-brand {
+        font-weight: 800;
+    }
+    .navbar-nav {
+        display: -webkit-box;
+        font-size: 1em;
+    }*/
 }
-
